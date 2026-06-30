@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BiteRush | Online Food Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">BiteRush</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="checkout.html">Checkout</a>
+      </nav>
+      <a class="cart-pill" href="cart.html">🛒 <span id="cart-count">0</span></a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Fresh meals • Fast delivery • Easy checkout</p>
+          <h1>Crave-worthy food delivered in minutes.</h1>
+          <p>
+            Explore handcrafted burgers, sizzling wraps, and sweet treats with a smooth experience from menu to payment.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="products.html">Order Now</a>
+            <a class="btn btn-secondary" href="checkout.html">Checkout</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <strong>25min</strong>
+              <span>Average delivery</span>
+            </div>
+            <div>
+              <strong>4.9★</strong>
+              <span>Rated by foodies</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>Support available</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-content">
+            <p class="eyebrow">Tonight’s favorite</p>
+            <h2>Loaded BBQ Burger</h2>
+            <p>Smoky sauce, crispy onions, and cheddar on a toasted bun.</p>
+            <div class="hero-card-footer">
+              <span>$14.90</span>
+              <button class="btn btn-primary add-to-cart" data-product-id="bbq-burger">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-strip">
+        <article>
+          <h3>Easy browsing</h3>
+          <p>Browse popular meals and add favorites in one tap.</p>
+        </article>
+        <article>
+          <h3>Flexible checkout</h3>
+          <p>Choose your address, payment type, and delivery mode.</p>
+        </article>
+        <article>
+          <h3>Secure payments</h3>
+          <p>Pay by card or cash on delivery with confidence.</p>
+        </article>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Popular picks</p>
+          <h2>Fresh food that feels special.</h2>
+        </div>
+        <div id="featured-products" class="product-grid"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

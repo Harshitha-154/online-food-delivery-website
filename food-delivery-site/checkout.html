@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | BiteRush</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">BiteRush</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="checkout.html">Checkout</a>
+      </nav>
+      <a class="cart-pill" href="cart.html">🛒 <span id="cart-count">0</span></a>
+    </header>
+
+    <main class="page-shell checkout-layout">
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Checkout</p>
+          <h2>Choose your delivery details.</h2>
+        </div>
+
+        <form id="checkout-form" class="checkout-form">
+          <div class="field-group">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Ava Johnson" required />
+          </div>
+
+          <div class="field-group">
+            <label for="address">Select address</label>
+            <select id="address" name="address">
+              <option>Ocean View Apartment, Floor 8</option>
+              <option>Green Park Residence</option>
+              <option>24 River Street</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label>Delivery method</label>
+            <div class="radio-row">
+              <label><input type="radio" name="delivery" value="delivery" checked /> Delivery</label>
+              <label><input type="radio" name="delivery" value="pickup" /> Pickup</label>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label>Payment type</label>
+            <div class="radio-row">
+              <label><input type="radio" name="payment" value="card" checked /> Card</label>
+              <label><input type="radio" name="payment" value="gpay" /> GPay</label>
+              <label><input type="radio" name="payment" value="cash" /> Cash on delivery</label>
+            </div>
+          </div>
+
+          <button class="btn btn-primary full-width" type="submit">Place order</button>
+          <p id="checkout-message" class="helper-text"></p>
+        </form>
+      </section>
+
+      <aside class="summary-card">
+        <h3>Order review</h3>
+        <div id="checkout-summary"></div>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

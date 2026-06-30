@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | BiteRush</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">BiteRush</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="checkout.html">Checkout</a>
+      </nav>
+      <a class="cart-pill" href="cart.html">🛒 <span id="cart-count">0</span></a>
+    </header>
+
+    <main class="page-shell cart-layout">
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Your cart</p>
+          <h2>Ready to checkout?</h2>
+        </div>
+        <div id="cart-items" class="cart-list"></div>
+      </section>
+
+      <aside class="summary-card">
+        <h3>Order summary</h3>
+        <div id="cart-summary"></div>
+        <a class="btn btn-primary full-width" href="checkout.html">Proceed to checkout</a>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
